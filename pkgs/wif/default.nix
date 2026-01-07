@@ -11,7 +11,8 @@
   armadillo,
   mlpack,
   cereal,
-  ensmallen
+  ensmallen,
+  lightgbm
 }:
 
 let
@@ -19,13 +20,13 @@ let
 in
 stdenv.mkDerivation rec {
   pname = "wif";
-  version = "3.2.0";
+  version = "3.3.1";
 
   src = fetchFromGitHub {
     owner = "CESNET";
     repo = "wif";
     tag = "v${version}";
-    hash = "sha256-BvNSgY2DG5vmFk+B+ww15tewYj9gUmZ2/+6dw4NBMY4=";
+    hash = "sha256-+GAzUmXysfavVAQ7Dt9YdjnUghyKs/Z1mZxdE2Ll/MA=";
   };
 
   cmakeFlags = [
@@ -38,7 +39,7 @@ stdenv.mkDerivation rec {
   '';
 
   nativeBuildInputs = [ cmake git cacert ];
-  buildInputs = [ nemea-framework pythonEnv boost armadillo mlpack cereal ensmallen ];
+  buildInputs = [ nemea-framework pythonEnv boost armadillo mlpack cereal ensmallen lightgbm ];
 
 
   meta = {
