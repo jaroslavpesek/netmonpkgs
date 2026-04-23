@@ -20,11 +20,11 @@ stdenv.mkDerivation rec {
   version = "2.8.0";
 
   src = fetchFromGitHub {
-    owner = "cesnet";
+    owner = "jaroslavpesek";
     repo = "ipfixcol2";
     #tag = "v${version}";
-    rev = "85009a8ac2c2a29a7eba073a644a46237ee480e5";
-    hash = "sha256-DDCGbcqA3uUgg/9CAi+SkuiPsgaKavAo+vxCW43rydo=";
+    rev = "81e91f34f78b6a76aefe18f8b7e7ff965ae5db34";
+    hash = "sha256-SnGpYsoltttS0Pz9bjQ8Es3JJouZ/41vqJzmMAif9qo=";
   };
 
   nativeBuildInputs = [ cmake git cacert ];
