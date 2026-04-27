@@ -23,8 +23,8 @@ stdenv.mkDerivation rec {
     owner = "jaroslavpesek";
     repo = "ipfixcol2";
     #tag = "v${version}";
-    rev = "a014dac5e422bd323aa131aa7680c6d7809d5733";
-    hash = "sha256-tK/5WgGz5f8OLOtL7JkiK/nLM4jLW0JJ8UhDgt9GxVc=";
+    rev = "ea63d95ab4eda7e5b03f5afdec6aa98d71d18de4";
+    hash = "sha256-8M6GN4EPVBmxz6VzMnit3JSMZKfte62pO/YEOe/ZXCE=";
   };
 
   nativeBuildInputs = [ cmake git cacert ];
